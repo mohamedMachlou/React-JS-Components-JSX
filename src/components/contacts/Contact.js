@@ -14,5 +14,10 @@ class Contact extends Component {
     );
   }
 }
+Contact.defaultProps = {
+  name: "My Name",
+  tel: "000000000",
+  email: "my@email.com",
+};
 
 export default Contact;

@@ -8,4 +8,8 @@ const Navbar = (props) => {
   );
 };
 
+Navbar.defaultProps = {
+  title: "My Title",
+};
+
 export default Navbar;

@@ -8,6 +8,9 @@ function App() {
     // const {name, tel, email} = Contact.this.props;
     <div className="App">
       <Navbar title="React JS Client Panel " />
+      <Navbar />
+
+      <Contact />
 
       <Contact
         name="Mohamed MACHLOU"
