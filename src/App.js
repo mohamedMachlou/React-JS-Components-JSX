@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Contact from "./components/contacts/Contact";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
+    // const {name, tel, email} = Contact.this.props;
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar title="React JS Client Panel " />
+
+      <Contact
+        name="Mohamed MACHLOU"
+        tel="0653508459"
+        email="medmachlou@gmail.com"
+      />
+      <Contact
+        name="Abderrahim MACHLOU"
+        tel="0653508445"
+        email="amachlou@gmail.com"
+      />
     </div>
   );
 }
