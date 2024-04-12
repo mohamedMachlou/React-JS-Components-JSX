@@ -2,15 +2,13 @@ import logo from "./logo.svg";
 import "./App.css";
 import Contact from "./components/contacts/Contact";
 import Navbar from "./components/navbar/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     // const {name, tel, email} = Contact.this.props;
     <div className="App">
-      <Navbar title="React JS Client Panel " />
       <Navbar />
-
-      <Contact />
 
       <Contact
         name="Mohamed MACHLOU"

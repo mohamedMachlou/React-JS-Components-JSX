@@ -4,12 +4,16 @@ class Contact extends Component {
   render() {
     const { name, tel, email } = this.props;
     return (
-      <div>
-        <h2>Contact : {name} </h2>
-        <ul>
-          <li>Tel : {tel} </li>
-          <li>Email : {email} </li>
-        </ul>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{name}</h4>
+          <p class="card-text">
+            <ul class="list-group">
+              <li class="list-group-item">Tel :{tel} </li>
+              <li class="list-group-item">Email : {email} </li>
+            </ul>
+          </p>
+        </div>
       </div>
     );
   }
