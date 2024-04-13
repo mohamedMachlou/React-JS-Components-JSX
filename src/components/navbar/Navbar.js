@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Navbar.css";
 const Navbar = (props) => {
   return (
@@ -21,12 +21,6 @@ const Navbar = (props) => {
             type="text"
             placeholder="Search"
           />
-          <button
-            classNameName="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
-          >
-            Search
-          </button>
         </form>
       </nav>
     </div>

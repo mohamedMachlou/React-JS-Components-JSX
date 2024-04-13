@@ -1,5 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.min.css";
 import Navbar from "./components/navbar/Navbar";
 import Contacts from "./components/contacts/Contacts";
 

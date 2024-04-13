@@ -3,17 +3,30 @@ import "./Contact.css";
 import PropTypes from "prop-types";
 
 class Contact extends Component {
+  state = {
+    showContactToggle: true,
+  };
+
+  showContact() {
+    this.setState({ showContactToggle: !this.showContactToggle });
+  }
+
   render() {
     const { name, tel, email } = this.props.data;
     return (
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">{name}</h4>
-          <p class="card-text">
-            <ul class="list-group">
-              <li class="list-group-item">tel :{tel} </li>
-              <li class="list-group-item">email : {email} </li>
-            </ul>
+      <div className="card">
+        <div className="card-body">
+          <h4 className="card-title">
+            {name}{" "}
+            <i onClick={this.showContact} className="fa fa-sort-down"></i>{" "}
+          </h4>
+          <p className="card-text">
+            {this.state.showContactToggle ? (
+              <ul className="list-group">
+                <li className="list-group-item">tel :{tel} </li>
+                <li className="list-group-item">email : {email} </li>
+              </ul>
+            ) : null}
           </p>
         </div>
       </div>
