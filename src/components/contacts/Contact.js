@@ -8,7 +8,11 @@ class Contact extends Component {
   };
 
   showContact() {
-    this.setState({ showContactToggle: !this.showContactToggle });
+    console.log("Salam Machlou");
+    this.setState({
+      showContactToggle: false,
+    });
+    console.log(this.state.showContactToggle);
   }
 
   render() {
